@@ -33,13 +33,9 @@ public class FaceppDetect {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                Log.d("zsf","ddddddddddddd");
-
                 try {
                     //请求
-                    Log.d("zsf","在try里面");
-//                    HttpRequests requests = new HttpRequests(Constant.Key, Constant.SECRET, false, true);
-                    HttpRequests requests = new HttpRequests(Constant.Key,Constant.SECRET,true,false);
+                    HttpRequests requests = new HttpRequests(Constant.Key,Constant.SECRET,true,true);
                     //Bitmap转换成二进制码
                     Bitmap bmSmall = Bitmap.createBitmap
                             (bitmap, 0, 0, bitmap.getWidth(), bitmap.getHeight());
@@ -50,7 +46,6 @@ public class FaceppDetect {
                     parameters.setImg(arrays);
                     JSONObject object = requests.detectionDetect(parameters);
                     //打印个Log
-                    Log.d("zsf", object.toString());
                     if (callBack != null) {
                         callBack.success(object);
                     }

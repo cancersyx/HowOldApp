@@ -5,8 +5,8 @@ package com.example.administrator.howold;
  */
 public class Constant {
 
-    public static final String Key = "Zves3EmJU7eSk-BjHgcQKmzetYSOy7U-";
-    public static final String SECRET = "Lhg07KsAzLC1JH9cCpknBATdlqSUeXuZ";
+    public static  String Key = "Zves3EmJU7eSk-BjHgcQKmzetYSOy7U-";
+    public static  String SECRET = "Lhg07KsAzLC1JH9cCpknBATdlqSUeXuZ";
 
 
 }
